@@ -3,8 +3,8 @@ services:
     container_name: postgres_container
     image: postgres
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: diel
+      POSTGRES_PASSWORD: diel
       POSTGRES_DB: dieldatabase
     volumes:
       - pgdata:/data/postgres

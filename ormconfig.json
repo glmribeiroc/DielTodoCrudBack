@@ -1,7 +1,7 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "username": "root",
+  "username": "dielback",
   "password": "admin",
   "database": "dieldatabase",
   "entities": ["./src/modules/**/entities/*.ts"],
