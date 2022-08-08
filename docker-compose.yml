@@ -1,16 +1,4 @@
 services:
-  app:
-    container_name: testedielback
-    build: .
-    ports:
-      - "3333:3333"
-    volumes:
-     - .:/usr/app
-    depends_on:
-      - postgres
-    networks:
-      - postgres
-
   postgres:
     container_name: postgres_container
     image: postgres
@@ -22,13 +10,7 @@ services:
       - pgdata:/data/postgres
     ports:
       - "5432:5432"
-    networks:
-      - postgres
     restart: always
-
-networks:
-  postgres:
-    driver: bridge
 
 volumes:
   pgdata:
